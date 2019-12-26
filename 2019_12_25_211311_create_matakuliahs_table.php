@@ -15,6 +15,9 @@ class CreateMatakuliahsTable extends Migration
     {
         Schema::create('matakuliahs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->char('kd_MK', 8) ->unique();
+            $table->string('nama_MK', 60);
+            $table->char(jmlh_SKS' 8;
             $table->timestamps();
         });
     }
